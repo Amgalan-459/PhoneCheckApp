@@ -1,4 +1,4 @@
-package com.example.phonecheckapp
+package com.example.phonecheckapp1
 
 import org.junit.Test
 
