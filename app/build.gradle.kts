@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.phonecheckapp"
+    namespace = "com.example.phonecheckapp1"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.phonecheckapp"
+        applicationId = "com.example.phonecheckapp1"
         minSdk = 33
         targetSdk = 35
         versionCode = 1
@@ -48,7 +48,20 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.media3.common.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    implementation(libs.material.v1110)
+
+    implementation (libs.glide)
+
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
 }
